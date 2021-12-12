@@ -1,0 +1,93 @@
+[
+	{
+		"abbr": "AL",
+		"name": "getElementById",
+		"capital": "to get the html tag by specifying the id ",
+		"lat": "32.361538",
+		"long": "-86.279118"
+	},
+	{
+		"abbr": "AK",
+		"name": "querySelector",
+		"capital": "Juneau",
+		"lat": "58.301935",
+		"long": "-134.419740"
+	},
+	{
+		"abbr": "AZ",
+		"name": "querySelectorAll",
+		"capital": "Phoenix",
+		"lat": "33.448457",
+		"long": "-112.073844"
+	},
+	{
+		"abbr": "AR",
+		"name": "map()",
+		"capital": "Little Rock",
+		"lat": "34.736009",
+		"long": "-92.331122"
+	},
+	{
+		"abbr": "CA",
+		"name": "let",
+		"capital": "Sacramento",
+		"lat": "38.555605",
+		"long": "-121.468926"
+	},
+	{
+		"abbr": "CO",
+		"name": "var",
+		"capital": "Denver",
+		"lat": "39.7391667",
+		"long": "-104.984167"
+	},
+	{
+		"abbr": "CT",
+		"name": "Math.random()",
+		"capital": "Hartford",
+		"lat": "41.767",
+		"long": "-72.677"
+	},
+	{
+		"abbr": "DE",
+		"name": "Math.floor()",
+		"capital": "Dover",
+		"lat": "39.161921",
+		"long": "-75.526755"
+	},
+	{
+		"abbr": "FL",
+		"name": "function",
+		"capital": "Tallahassee",
+		"lat": "30.4518",
+		"long": "-84.27277"
+	},
+	{
+		"abbr": "GA",
+		"name": "join()",
+		"capital": "Atlanta",
+		"lat": "33.76",
+		"long": "-84.39"
+	},
+	{
+		"abbr": "HI",
+		"name": "toString",
+		"capital": "Honolulu",
+		"lat": "21.30895",
+		"long": "-157.826182"
+	},
+	{
+		"abbr": "ID",
+		"name": "push()",
+		"capital": "Boise",
+		"lat": "43.613739",
+		"long": "-116.237651"
+	},{
+		"abbr": "ID",
+		"name": "const",
+		"capital": "Boise",
+		"lat": "43.613739",
+		"long": "-116.237651"
+	}
+	
+]
