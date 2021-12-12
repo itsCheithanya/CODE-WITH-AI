@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/35a7a1a465.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/inedex.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="alan-btn"></div>
+    <script
+      type="text/javascript"
+      src="https://studio.alan.app/web/lib/alan_lib.min.js"
+    ></script>
+    <script>
+      var alanBtnInstance = alanBtn({
+        key: 'ddab29b2512a09f0b9635ab773992dd52e956eca572e1d8b807a3e2338fdd0dc/stage',
+        onCommand: function (commandData) {
+          if (commandData.command === 'highlight') {
+            highlight(commandData.item)
+          } else if (commandData.command === 'type') {
+            if (commandData.type === 'html') {
+              console.log(commandData.content)
+              document.getElementById('html').value += commandData.content
+            }
+
+            if (commandData.type === 'css') {
+              document.getElementById('css').value += commandData.content
+            }
+
+            if (commandData.type === 'javascript') {
+              document.getElementById('javascript').value += commandData.content
+            }
+          }
+        },
+        rootEl: document.getElementById('alan-btn'),
+      })
+
+      function highlight(item) {
+        console.log(item)
+        const l = document.getElementById(item)
+        if (l) {
+          ;[...l.parentElement.children].forEach((sib) =>
+            sib.classList.remove('highlighted')
+          )
+          l.classList.add('highlighted')
+          l.classList.remove('higlighted')
+        }
+      }
+    </script>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center mb-3">
+            <i class="fas fa-code"> CODE MADE SIMPLE WITH AI</i>
+          </h3>
+          <input
+            id="search"
+            class="form-control form-control-lg"
+            placeholder="predicts your next move"
+          />
+
+          <div class="l" id="HTML">HTML:</div>
+          <textarea id="html" class="form-control form-control-lg"></textarea>
+          <div class="l" id="CSS">CSS:</div>
+          <textarea id="css" class="form-control form-control-lg"></textarea>
+          <div class="l" id="JAVASCRIPT">JAVASCRIPT:</div>
+
+          <textarea
+            id="javascript"
+            class="form-control form-control-lg"
+          ></textarea>
+          <div>OUTPUT:</div>
+          <iframe
+            class="form-control form-control-lg"
+            id="output"
+            style="border-radius: 10px; background-color: azure"
+          ></iframe>
+        </div>
+        <div id="match-list"></div>
+        <p>made with &#128151; by Cheithanya PR</p>
+      </div>
+    </div>
+    <script src="js/index.js "></script>
+  </body>
+</html>
